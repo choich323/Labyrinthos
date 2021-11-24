@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
             AriadneMove(targetN.transform.position, 130, 0);
         else if (cam.transform.rotation.y >= 0.45f && cam.transform.rotation.y < 0.8f)      // 플레이어가 동쪽 통로를 볼 때
             AriadneMove(targetE.transform.position, -130, 90);
-        else if (cam.transform.rotation.y <= -0.45f && cam.transform.rotation.y > -0.8f)    // 플레이어가 서쪽 통로를 볼 때
+        else if (cam.transform.rotation.y <= -0.55f && cam.transform.rotation.y > -0.8f)    // 플레이어가 서쪽 통로를 볼 때
             AriadneMove(targetW.transform.position, 50, -90);
         else if (cam.transform.rotation.y >= 0.95f || cam.transform.rotation.y <= -0.95f)   // 플레이어가 남쪽 통로를 볼 때
             AriadneMove(targetS.transform.position, -50, 180);
