@@ -44,13 +44,13 @@ public class Player : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (cam.transform.rotation.y >= -0.35f && cam.transform.rotation.y < 0.25)          // 플레이어가 북쪽 통로를 볼 때
+        if (cam.transform.rotation.eulerAngles.y >= -35 && cam.transform.rotation.eulerAngles.y < 30)          // 플레이어가 북쪽 통로를 볼 때
             AriadneMove(targetN.transform.position, 130, 0);
-        else if (cam.transform.rotation.y >= 0.45f && cam.transform.rotation.y < 0.8f)      // 플레이어가 동쪽 통로를 볼 때
+        else if (cam.transform.rotation.eulerAngles.y >= 45 && cam.transform.rotation.eulerAngles.y < 110) // 플레이어가 동쪽 통로를 볼 때
             AriadneMove(targetE.transform.position, -130, 90);
-        else if (cam.transform.rotation.y <= -0.55f && cam.transform.rotation.y > -0.8f)    // 플레이어가 서쪽 통로를 볼 때
+        else if (cam.transform.rotation.eulerAngles.y >= 245 && cam.transform.rotation.eulerAngles.y < 290)    // 플레이어가 서쪽 통로를 볼 때
             AriadneMove(targetW.transform.position, 50, -90);
-        else if (cam.transform.rotation.y >= 0.95f || cam.transform.rotation.y <= -0.95f)   // 플레이어가 남쪽 통로를 볼 때
+        else if (cam.transform.rotation.eulerAngles.y >= 150 && cam.transform.rotation.eulerAngles.y < 215)   // 플레이어가 남쪽 통로를 볼 때
             AriadneMove(targetS.transform.position, -50, 180);
 
         if (time > 0.1f)                                                                 // 시간이 경과하면서
