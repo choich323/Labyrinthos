@@ -13,14 +13,14 @@ public class PillarFire : MonoBehaviour
 
     void Update()
     {
-        if(!isblue)
+        if(!isblue && isfire)
             FireOff();
     }
 
     void FireOff() // 일정 시간이 지나면 불이 꺼지도록
     {
         time += Time.deltaTime;
-        if(time > 25) // 일정 시간이 지나면
+        if(time > 20) // 일정 시간이 지나면
         {
             fire.SetActive(false); // 불이 꺼지고
             isfire = false;        // 불이 꺼진 것을 저장하고
