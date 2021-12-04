@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/flash back 1.unity
     guid: e4caf78191b3d944a9052e77a7b552b8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/flash back 2.unity
     guid: bfec7e7464dbc164fbac979f87487a34
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 15eb292ba86247947abd52a5a9592801
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2d63a586ca4533e4981df1ffc4149dab, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 52ffccbba24612348bb028f249283565, type: 2}

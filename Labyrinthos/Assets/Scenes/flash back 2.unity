@@ -739,6 +739,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XRRig: {fileID: 0}
+--- !u!1 &1102201314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4629741035309675211, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
+  m_PrefabInstance: {fileID: 1155220779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1102201317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102201314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a1329652d8d6d48840b040a94fdcb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashbackManger: {fileID: 1324542428}
+  flashbackNum: 2
 --- !u!1001 &1155220779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -796,7 +815,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c928841b0ad110e4ab5ac5801c494144, type: 2}
     - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].key
@@ -817,7 +836,7 @@ PrefabInstance:
     - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
       propertyPath: m_SceneBindings.Array.data[4].key
       value: 
-      objectReference: {fileID: -4882903784015453968, guid: c928841b0ad110e4ab5ac5801c494144, type: 2}
+      objectReference: {fileID: -4547928423682122650, guid: c928841b0ad110e4ab5ac5801c494144, type: 2}
     - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
       propertyPath: m_SceneBindings.Array.data[5].key
       value: 
@@ -838,6 +857,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
       objectReference: {fileID: 860138095}
+    - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].value
+      value: 
+      objectReference: {fileID: 1324542428}
     - target: {fileID: 4629741035309675211, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
       propertyPath: m_Name
       value: Timeline
@@ -849,6 +872,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 52d80f5583bf37944a07fbe39a3cc7ef, type: 3}
   m_PrefabInstance: {fileID: 2118240801}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1324542428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324542430}
+  m_Layer: 0
+  m_Name: flashbackManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1324542430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324542428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.7426324, y: 0.50843036, z: 5.6415296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1541708521
 GameObject:
   m_ObjectHideFlags: 0

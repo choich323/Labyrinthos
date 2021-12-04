@@ -156,6 +156,36 @@ Transform:
   m_Father: {fileID: 1756267357}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &74298270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 74298271}
+  m_Layer: 0
+  m_Name: flashbackManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &74298271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74298270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.519244, y: 1.1756718, z: 5.756157}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &272111919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -806,6 +836,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].key
+      value: 
+      objectReference: {fileID: 7390606345292813677, guid: 0ebd3a8a7cde8f24db23e9338a233541, type: 2}
+    - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
       objectReference: {fileID: 1098718867}
@@ -821,12 +859,35 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
       objectReference: {fileID: 1098718866}
+    - target: {fileID: 4629741035309675210, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].value
+      value: 
+      objectReference: {fileID: 74298270}
     - target: {fileID: 4629741035309675211, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
       propertyPath: m_Name
       value: Timeline
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
+--- !u!1 &1155220780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4629741035309675211, guid: 0d2e03250d227814ebf2750c0cfa40e9, type: 3}
+  m_PrefabInstance: {fileID: 1155220779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1155220781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155220780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a1329652d8d6d48840b040a94fdcb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashbackManger: {fileID: 74298270}
+  flashbackNum: 1
 --- !u!1 &1541708521
 GameObject:
   m_ObjectHideFlags: 0
