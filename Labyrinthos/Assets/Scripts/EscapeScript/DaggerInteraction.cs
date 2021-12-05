@@ -4,23 +4,14 @@ using UnityEngine;
 
 public class DaggerInteraction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter(Collider collider)
     {
+        //칼로 Blood Statue를 베었을 경우, 트리거 값 변경 + 베는 소리 출력
         if(collider.gameObject.tag == "BloodStatue")
         {
             EscapeManager.instance.next_stage = 1;
+            GetComponent<AudioSource>().Play();
         }
     }
 }
