@@ -10,6 +10,8 @@ public class FlashbackManager : MonoBehaviour
 
     void Update()
     {
+        if (!flashbackManger.activeSelf && flashbackNum == 1)
+            SceneManager.LoadScene("EscapeScene");
         if (!flashbackManger.activeSelf && flashbackNum == 2)
             SceneManager.LoadScene("EndScene");
     }
