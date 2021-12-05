@@ -25,6 +25,7 @@ public class EscapeManager : MonoBehaviour
     public int level2_clear = 0; // level2 정답 유무
     public int statue_col = 0; // Blood Cup 에 Horse Statue를 넣었는가?
     public int next_stage = 0; // Next Stage로 가기 위해 Blood Statue를 칼로 베었는가?
+    public int On_table = 0; // Blood Statue가 제물대 위에 있는가?
     
     void Awake()
     {

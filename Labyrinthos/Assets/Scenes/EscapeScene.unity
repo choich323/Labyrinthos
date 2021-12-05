@@ -166,7 +166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7082253697454338187, guid: 9e8832807846cb44282c4d537e84e141, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.077
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 7082253697454338187, guid: 9e8832807846cb44282c4d537e84e141, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13000,6 +13000,7 @@ GameObject:
   - component: {fileID: 1191178053}
   - component: {fileID: 1179243739}
   - component: {fileID: 1817057923}
+  - component: {fileID: 1188637166}
   m_Layer: 0
   m_Name: grave_18_(Clone)
   m_TagString: Untagged
@@ -13007,6 +13008,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1188637166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188637165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1d8f60da9e855419156fc739921e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1188871823
 Transform:
   m_ObjectHideFlags: 0
@@ -13404,11 +13417,12 @@ MonoBehaviour:
   BloodCup: {fileID: 8372852964133868398}
   Portal: {fileID: 825385495}
   BloodEffect: {fileID: 539061227}
-  level1_answer: 42
+  level1_answer: 10
   level1_score: 0
   level2_clear: 0
   statue_col: 0
   next_stage: 0
+  On_table: 0
 --- !u!1 &1225095229
 GameObject:
   m_ObjectHideFlags: 0
