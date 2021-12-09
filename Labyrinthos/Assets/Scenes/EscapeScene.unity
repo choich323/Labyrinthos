@@ -13417,7 +13417,7 @@ MonoBehaviour:
   BloodCup: {fileID: 8372852964133868398}
   Portal: {fileID: 825385495}
   BloodEffect: {fileID: 539061227}
-  level1_answer: 10
+  level1_answer: 42
   level1_score: 0
   level2_clear: 0
   statue_col: 0

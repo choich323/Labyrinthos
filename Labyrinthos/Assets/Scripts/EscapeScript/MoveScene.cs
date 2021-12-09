@@ -10,7 +10,7 @@ public class MoveScene : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            //SceneManager.LoadScene("");
+            SceneManager.LoadScene("flash back 2");
         }
     }
 }
