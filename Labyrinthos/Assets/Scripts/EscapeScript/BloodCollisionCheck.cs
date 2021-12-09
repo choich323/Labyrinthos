@@ -68,14 +68,18 @@ public class BloodCollisionCheck : MonoBehaviour
     {
         if(EscapeManager.instance.level2_clear == 1 && destroy == 0)
         {
-            Destroy(collision.gameObject);
-            destroy = 1;
-
+            if(collision.gameObject.tag != "Statue" && collision.gameObject.tag != "BloodStatue") //statue가 없으면 게임이 진행이 안됨
+            {
+                Destroy(collision.gameObject);
+                destroy = 1;
+            }
+            
         }
     }
 
     void ClearCheck()
     {
+        // 혹시 모를 버그 및 난이도 완화를 위해서 이물질 상관없이 재료만 다 들어가면 클리어로 판정
         if(KeyA == 1 && KeyB >= 1 && KeyC >= 1)
         {
             EscapeManager.instance.level2_clear = 1;
